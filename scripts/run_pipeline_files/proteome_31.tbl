@@ -1,0 +1,16 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+WP_053549228.1       -          aligned_hsp70gene    -           1.9e-284  942.3  24.0    7e-282  933.8  24.0   2.0   1   1   0   1   1   1   1 molecular chaperone DnaK 
+WP_053550046.1       -          aligned_hsp70gene    -            1.8e-12   44.0   5.6   8.2e-12   41.8   5.6   1.9   1   1   0   1   1   1   1 rod shape-determining protein 
+WP_053550968.1       -          aligned_hsp70gene    -             0.0008   15.4   0.1    0.0087   12.0   0.0   2.1   2   0   0   2   2   2   1 pilus assembly protein PilM 
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      ./run_pipeline_files/hsp70geneprofile.hmm
+# Target file:     /users/micazama/Midterm-EmmaS-MateoIM/bioinformatics_project/proteomes//proteome_31.fasta
+# Option settings: hmmsearch -o ./run_pipeline_files/dump.txt --tblout ./run_pipeline_files/proteome_31.tbl -E 0.001 ./run_pipeline_files/hsp70geneprofile.hmm /users/micazama/Midterm-EmmaS-MateoIM/bioinformatics_project/proteomes//proteome_31.fasta 
+# Current dir:     /users/micazama/Midterm-EmmaS-MateoIM/scripts
+# Date:            Fri Oct 16 02:33:35 2026
+# [ok]

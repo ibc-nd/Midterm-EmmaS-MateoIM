@@ -1,0 +1,18 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+YP_001635848.1       -          aligned_hsp70gene    -           2.6e-281  932.1  18.5  2.4e-279  925.6  18.5   2.0   1   1   0   1   1   1   1 chaperone protein DnaK 
+YP_001635675.1       -          aligned_hsp70gene    -           4.9e-279  924.6  12.4  6.8e-247  818.4   6.8   2.0   1   1   1   2   2   2   2 chaperone protein DnaK 
+YP_001636627.1       -          aligned_hsp70gene    -            1.2e-11   41.4   5.7   6.1e-10   35.8   5.7   2.7   1   1   0   1   1   1   1 rod shape-determining protein MreB 
+YP_001633759.1       -          aligned_hsp70gene    -            8.3e-11   38.6   5.7   1.8e-10   37.5   5.7   1.7   1   1   0   1   1   1   1 rod shape-determining protein MreB 
+YP_001634376.1       -          aligned_hsp70gene    -             0.0008   15.6   0.1    0.0008   15.6   0.1   2.2   3   0   0   3   3   3   1 cell division protein FtsA 
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      ./run_pipeline_files/hsp70geneprofile.hmm
+# Target file:     /users/micazama/Midterm-EmmaS-MateoIM/bioinformatics_project/proteomes//proteome_25.fasta
+# Option settings: hmmsearch -o ./run_pipeline_files/dump.txt --tblout ./run_pipeline_files/proteome_25.tbl -E 0.001 ./run_pipeline_files/hsp70geneprofile.hmm /users/micazama/Midterm-EmmaS-MateoIM/bioinformatics_project/proteomes//proteome_25.fasta 
+# Current dir:     /users/micazama/Midterm-EmmaS-MateoIM/scripts
+# Date:            Fri Oct 16 02:33:35 2026
+# [ok]

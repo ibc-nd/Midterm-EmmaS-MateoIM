@@ -1,0 +1,14 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+WP_010902322.1       -          aligned_hsp70gene    -                  0 1040.7  31.7         0 1040.5  31.7   1.0   1   0   0   1   1   1   1 molecular chaperone DnaK 
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      ./run_pipeline_files/hsp70geneprofile.hmm
+# Target file:     /users/micazama/Midterm-EmmaS-MateoIM/bioinformatics_project/proteomes//proteome_41.fasta
+# Option settings: hmmsearch -o ./run_pipeline_files/dump.txt --tblout ./run_pipeline_files/proteome_41.tbl -E 0.001 ./run_pipeline_files/hsp70geneprofile.hmm /users/micazama/Midterm-EmmaS-MateoIM/bioinformatics_project/proteomes//proteome_41.fasta 
+# Current dir:     /users/micazama/Midterm-EmmaS-MateoIM/scripts
+# Date:            Fri Oct 16 02:33:37 2026
+# [ok]

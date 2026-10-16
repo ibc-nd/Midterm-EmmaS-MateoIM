@@ -1,0 +1,159 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  ./run_pipeline_files/hsp70geneprofile.hmm
+# target sequence database:        /users/micazama/Midterm-EmmaS-MateoIM/bioinformatics_project/proteomes//proteome_50.fasta
+# output directed to file:         ./run_pipeline_files/dump.txt
+# per-seq hits tabular output:     ./run_pipeline_files/proteome_50.tbl
+# sequence reporting threshold:    E-value <= 0.001
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       aligned_hsp70gene  [M=616]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence       Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------       -----------
+          0 1098.5  23.8          0 1098.4  23.8    1.0  1  WP_048118742.1  MULTISPECIES: molecular chaperone DnaK 
+   8.3e-110  365.5   9.1   2.8e-100  334.0   3.7    2.0  2  WP_048116754.1  MULTISPECIES: hypothetical protein 
+   1.5e-106  354.7  13.5      2e-99  331.2   6.6    2.0  2  WP_048116752.1  MULTISPECIES: Hsp70 family protein 
+
+
+Domain annotation for each sequence (and alignments):
+>> WP_048118742.1  MULTISPECIES: molecular chaperone DnaK 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ! 1098.4  23.8         0         0       1     615 [.       1     618 [.       1     620 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 1098.4 bits;  conditional E-value: 0
+  aligned_hsp70gene   1 makilGidlGttnsaaavleggkptiipnaeGarttPsvvafskdgeklvGepakrqavsnPentiasikrkmGeedykvklegkeytPqei 92 
+                        makilGidlGttns++av+egg++++ipnaeGarttPsvv+fsk+geklvG++akrqa+snPent++sikr+mG++dykv+l+g++y+Pqei
+     WP_048118742.1   1 MAKILGIDLGTTNSCMAVMEGGEAVVIPNAEGARTTPSVVGFSKKGEKLVGQVAKRQAISNPENTVYSIKRHMGDADYKVTLQGTQYKPQEI 92 
+                        9******************************************************************************************* PP
+
+  aligned_hsp70gene  93 samilqkikkdaeaylGeevekavitvPayfndnqrqatkdaGeiaGleveriinePtaaslayGldkeekdqkilvydlGGGtldvsilel 184
+                        samilqk+k+daeaylGe++++avitvPayfnd+qrqatkdaG+iaGl+v riinePt+aslayGldk + +q+ilvydlGGGt+dvsilel
+     WP_048118742.1  93 SAMILQKLKADAEAYLGETIKQAVITVPAYFNDAQRQATKDAGAIAGLDVLRIINEPTSASLAYGLDKGDIEQTILVYDLGGGTFDVSILEL 184
+                        ******************************************************************************************** PP
+
+  aligned_hsp70gene 185 gggvfevlstsGdtqlGGddldeaiidyladefkkeeGidlredkaalqrlkdaaekakielssvleteinlPfitatdsG.pkhleldltr 275
+                        g gvfev+stsGdt+lGGdd+d++i++yl++ef+k+eGidl++dka+lqrl+daaekakiels+v++t+inlPf+t++++G pkhl++dltr
+     WP_048118742.1 185 GSGVFEVKSTSGDTHLGGDDFDQRIVNYLLAEFRKNEGIDLSKDKAVLQRLTDAAEKAKIELSGVASTNINLPFLTVGTDGePKHLDIDLTR 276
+                        ******************************************************************************************** PP
+
+  aligned_hsp70gene 276 akleelvedlvertlaslekaledaklsksdidkvilvGGstrmPavkelveellGkepeknvdPdeavalGaaiqagvlaGevkdivlldv 367
+                        a++++++edl+e+tl+s+++al+dakl+++d+dkvilvGGstrmPav+elve+++Gk+p+kn++Pdeava+Gaaiqagvl+Gevkd++lldv
+     WP_048118742.1 277 AQFQKMTEDLLEKTLVSMRQALSDAKLTPNDLDKVILVGGSTRMPAVVELVENFTGKKPYKNINPDEAVAIGAAIQAGVLGGEVKDVLLLDV 368
+                        ******************************************************************************************** PP
+
+  aligned_hsp70gene 368 tPlslgietlGgvaerliernttiPtkkskvfttaadnqtsveihvlqGerelasenkslGrfkltgipPaPrGvPqievtfdidanGilnv 459
+                        tPl+lgietlGg+a++li+rnttiPtkks+vf+taadnq+sveihvlqGer++asenk+lGrf+l+gipPaPrG+PqievtfdidanGil+v
+     WP_048118742.1 369 TPLTLGIETLGGIATPLIPRNTTIPTKKSQVFSTAADNQPSVEIHVLQGERGVASENKTLGRFTLDGIPPAPRGIPQIEVTFDIDANGILHV 460
+                        ******************************************************************************************** PP
+
+  aligned_hsp70gene 460 eakdlgtgkeqsitieasaklsdeeiermkkdaekhaeedkkrkeeievrneaesliqaaeklleeaedkvdeeqkekveaaiedlkevlee 551
+                         akdlgtgkeqsi+i+++++lsdeei+rm+kdae haeedkkrke++e++n+ae+li+aaek+l+eaed+++e+qk+kv+aa++dlk++le+
+     WP_048118742.1 461 GAKDLGTGKEQSISIQKPGGLSDEEIDRMVKDAELHAEEDKKRKEDVETKNNAEALINAAEKTLKEAEDVATEDQKSKVTAAVDDLKKALEG 552
+                        ******************************************************************************************** PP
+
+  aligned_hsp70gene 552 kdaeeikaktealseevqeigtklyqkaaqeaqaaaa..gaagsadakeedeevvdadyevvddek 615
+                         d+e+ik+kteal+e+v++i+t++yqka+q++qa++a  gaa+s+da+++de+vvdadyevvddek
+     WP_048118742.1 553 TDIEAIKSKTEALQEAVYPISTAMYQKAQQAQQAQQAegGAAESHDAQGPDETVVDADYEVVDDEK 618
+                        ***************************99888776433488999*******************976 PP
+
+>> WP_048116754.1  MULTISPECIES: hypothetical protein 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  334.0   3.7  2.5e-103  2.8e-100       4     353 ..       4     349 ..       1     360 [. 0.96
+   2 !   34.9   0.2   8.8e-13     1e-09     365     475 ..     381     497 ..     373     590 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 334.0 bits;  conditional E-value: 2.5e-103
+  aligned_hsp70gene   4 ilGidlGttnsaaavl..eggkptiipnaeGarttPsvvafskdgeklvGepakrqavsnPentiasikrkmGeedykvklegkeytPqeis 93 
+                         +GidlGtt sa+a +  ++gkp++i n  G+  tPsv++f  +g+ l G+ ak+       nt+a  kr+mG++ ++v+++gk+y+  + s
+     WP_048116754.1   4 RVGIDLGTTFSAVACIdeQTGKPEVIKNCFGSAITPSVLCFEPNGNILYGQDAKNMQAMGDINTVAFFKRSMGKDMFSVEINGKTYNATDFS 95 
+                        58*************944579**********************************9999999****************************** PP
+
+  aligned_hsp70gene  94 amilqkikkdaeaylGeevekavitvPayfndnqrqatkdaGeiaGleveriinePtaaslayGldkeekdqkilvydlGGGtldvsilelg 185
+                        a+ l+kikk+ae  +Ge+++ avitvPayf  + r+at +aG+ aGl+v  iinePtaa++ayGl+ ++ +q++l+ydlGGGt+dv+i  + 
+     WP_048116754.1  96 ATFLEKIKKEAESQIGEKIDAAVITVPAYFTHKEREATIEAGKRAGLDVLSIINEPTAAAIAYGLNGKDAEQTVLIYDLGGGTFDVTIARIN 187
+                        ******************************************************************************************** PP
+
+  aligned_hsp70gene 186 ggvfevlstsGdtqlGGddldeaiidyladefkkeeGidlredkaalqrlkdaaekakielssvleteinlPfitatdsGpkhleldltrak 277
+                        +   ++l ++G+ +lGG+d+d+ i  yl++ef+++ Gidl+ed++++  l  +ae+ k +l+++ + ++ + + +         ++++t   
+     WP_048116754.1 188 KDEIDILGSDGNHELGGKDWDDCIARYLVAEFQERYGIDLSEDREMVASLLVTAENVKRQLTAKDTVRVPITYQSI------RANIEITEDL 273
+                        *************************************************************998877777666554......45688999** PP
+
+  aligned_hsp70gene 278 leelvedlvertlaslekaledaklsksdidkvilvGGstrmPavkelveellGkepeknvdPdeavalGaaiqag 353
+                        +e++ + l+  t++ +e  ++  +ls ++id vilvGGstrm +v+++ve++ Gk+p ++v+ deavalGaai+a 
+     WP_048116754.1 274 FESISQFLLGTTKELTEGLITSLNLSWNNIDGVILVGGSTRMRMVHKYVESMSGKHPLSGVNVDEAVALGAAIRAN 349
+                        *************************************************************************985 PP
+
+  == domain 2  score: 34.9 bits;  conditional E-value: 8.8e-13
+  aligned_hsp70gene 365 ldvtPlslgi...etlGg..vaerliernttiPtkkskvftta.adnqtsveihvlqGerelasenkslGrfkltgipPaPrGvPqievtfd 450
+                        +dvt  slg+      G   +   +i++n+ +P+++++ f      +   +e+ +lqGe e   +n+ + ++ +t+i      +  i+vt++
+     WP_048116754.1 381 FDVTAHSLGMisiSPDGEkyINSIIIKKNSKVPAENTRSFKFKtRTKNNELEVYILQGEFERPLDNTIINKYVITEIERVSSSTSFIDVTYQ 472
+                        6788777764111233333388899**********9998875414556789***************************************** PP
+
+  aligned_hsp70gene 451 idanGilnveakdlgtgkeqsitie 475
+                          +nG+++v+a  +   k+  i ie
+     WP_048116754.1 473 YTSNGVVEVSAVQQENHKKLPIRIE 497
+                        ******************9999997 PP
+
+>> WP_048116752.1  MULTISPECIES: Hsp70 family protein 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  331.2   6.6  1.8e-102     2e-99       1     352 [.       1     347 [.       1     354 [. 0.96
+   2 !   28.1   0.6     1e-10   1.2e-07     383     494 ..     422     539 ..     374     541 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 331.2 bits;  conditional E-value: 1.8e-102
+  aligned_hsp70gene   1 mak.ilGidlGttnsaaavl.eggkptiipnaeGarttPsvvafskdgeklvGepakrqavsnPentiasikrkmGeedykvklegkeytPq 90 
+                        mak + GidlGtt s++a + e+g++++i n eG+ ttPsvv f+   + +vG++ak+ av +P+nt+  +k  mG++++ ++ ++++  P+
+     WP_048116752.1   1 MAKyVYGIDLGTTYSCIAYVdESGRANVIKNLEGTNTTPSVVNFASPNQVVVGQVAKETAVIDPKNTVSLVKTLMGKSNFAINYNDEDKSPE 92 
+                        675378***********966489********************************************************************* PP
+
+  aligned_hsp70gene  91 eisamilqkikkdaeaylGeevekavitvPayfndnqrqatkdaGeiaGleveriinePtaaslayGldkeekdqkilvydlGGGtldvsil 182
+                        e+sa+il+k+ +da + +  ev++ vit Payf  + r+atk+aG iaGl+v  ii eP aa++ yG  ke ++++ilvydlGGGt+dv+i+
+     WP_048116752.1  93 EVSAYILRKLAEDAAKEIDAEVKDVVITCPAYFGTAERTATKNAGIIAGLNVLEIISEPVAAAIYYGCTKEPEEKTILVYDLGGGTFDVTIM 184
+                        ******************************************************************************************** PP
+
+  aligned_hsp70gene 183 elgggvfevlstsGdtqlGGddldeaiidyladefkkeeGidlredkaalqrlkdaaekakielssvleteinlPfitatdsGpkhleldlt 274
+                         +     e+++++Gd +lGG+d+d+a + yladef +++  d   d+ a q l+  aekak +ls++ +t +    i +++ G     +d++
+     WP_048116752.1 185 SINSEKIEIICSDGDHDLGGKDWDSATMRYLADEFASQKSYDGDFDEYAQQDLRLKAEKAKQQLSAKEKTPV----I-VEAAGE-RARIDFS 270
+                        ********************************************************************9965....4.444554.567899* PP
+
+  aligned_hsp70gene 275 rakleelvedlvertlaslekaledaklsksdidkvilvGGstrmPavkelveellGkepeknvdPdeavalGaaiqa 352
+                        r k++e++  l++ t+  ++ a++ a+    ++d+++lvGGstrmP+v+ ++ee  G +p+  ++Pdeava Gaai a
+     WP_048116752.1 271 REKFDEITFSLLNSTVDKTDAAIAVAEKRGFKVDEILLVGGSTRMPQVTRVLEEKYGIKPK-ILEPDEAVAKGAAIHA 347
+                        ***********************************************************96.69************97 PP
+
+  == domain 2  score: 28.1 bits;  conditional E-value: 1e-10
+  aligned_hsp70gene 383 rliernttiP...tkkskvfttaadnqtsveihvlqGe....relasenkslGrfkltgipPaPrGvPqievtfdidanGilnveakdlgtg 467
+                        ++i +n ++P   ++ s+ f t   nq + ei v   +        +++  +G+ +l+     P G P ie+ + ++++Gil+v+ kdl+++
+     WP_048116752.1 422 NMIIKNNSMPdgvITVSQTFGTYIANQETAEIVVYESDfmdeYFDIDKDYEIGTATLELPDNLPSGAP-IEIILSLNSEGILEVTGKDLTSN 512
+                        5677888888554578****************99876421113334566789*****988899****9.9********************** PP
+
+  aligned_hsp70gene 468 keqsitieasaklsdeeiermkkdaek 494
+                        ke + t+++++ ++ ee+e ++k++++
+     WP_048116752.1 513 KEIHATMQSKNIMTSEEVEDLRKKSQQ 539
+                        *********************998776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (616 nodes)
+Target sequences:                       3436  (1017542 residues searched)
+Passed MSV filter:                       195  (0.056752); expected 68.7 (0.02)
+Passed bias filter:                       85  (0.0247381); expected 68.7 (0.02)
+Passed Vit filter:                        10  (0.00291036); expected 3.4 (0.001)
+Passed Fwd filter:                         3  (0.000873108); expected 0.0 (1e-05)
+Initial search space (Z):               3436  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.02
+# Mc/sec: 26276.88
+//
+[ok]

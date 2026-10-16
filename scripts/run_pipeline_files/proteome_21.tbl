@@ -1,0 +1,16 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+NP_951095.1          -          aligned_hsp70gene    -           6.9e-286  947.1  20.5  3.1e-251  832.6  15.4   2.0   1   1   1   2   2   2   2 molecular chaperone DnaK 
+NP_953138.1          -          aligned_hsp70gene    -            2.1e-12   43.7   3.2   5.1e-12   42.5   3.2   1.9   1   1   0   1   1   1   1 rod shape-determining protein MreB 
+NP_951790.1          -          aligned_hsp70gene    -            7.5e-07   25.4   0.3   1.1e-06   24.8   0.3   1.2   1   0   0   1   1   1   1 rod shape-determining protein MreB 
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      ./run_pipeline_files/hsp70geneprofile.hmm
+# Target file:     /users/micazama/Midterm-EmmaS-MateoIM/bioinformatics_project/proteomes//proteome_21.fasta
+# Option settings: hmmsearch -o ./run_pipeline_files/dump.txt --tblout ./run_pipeline_files/proteome_21.tbl -E 0.001 ./run_pipeline_files/hsp70geneprofile.hmm /users/micazama/Midterm-EmmaS-MateoIM/bioinformatics_project/proteomes//proteome_21.fasta 
+# Current dir:     /users/micazama/Midterm-EmmaS-MateoIM/scripts
+# Date:            Fri Oct 16 02:33:35 2026
+# [ok]
