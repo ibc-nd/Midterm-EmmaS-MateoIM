@@ -19,6 +19,53 @@ grep -v "#" -c results_table.txt
 #2.c) Explaining significance of E-value and why we use a threshold
 # The E value (Expected value) estimates how likely it is your match occurred by chance, with a low E value thus meaning your match is statistically significant (less likely to have occurred by chance) and a high value meaning it is not statistically significant. A threshold removes matches that are likely random and not statistically significant, therefore allowing us to focus on only important matches. This is important when there are hundreds or thousands of matches. 
 
+#4.b) Proteome with most/fewest hits?
+#for mcrA gene
+grep -c ',0$' pipeline_results_mcrAgene.csv
+34
+#34 had 0 hits
+
+$ grep -c ',2$' pipeline_results_mcrAgene.csv
+2
+#2 had 2 hits
+proteome_19,2
+proteome_23,2
+
+#for hsp70 gene
+$ grep -c ',0$' pipeline_results_hsp70gene.csv
+8
+#8 had 0 hits
+
+$ grep -c ',7$' pipeline_results_hsp70gene.csv
+2
+#2 had 7 hits:
+proteome_18,7
+proteome_22,7
+
+#4.c) What biological question could the variation in hit counts answer?
+#These hit counts help us answer the main question of this assignment, whic h is which proteomes are the best candidates for culturing a pH-resistant methanogenic archaea. The proteomes with the most hits for the McrA gene are most likely to be methanogenic, and the proteomes with the most hits for the hsp70 gene are most likely to survive pH-induced stress. We can therefore combine our results from both McrA and hsp70 searches to deduce which proteomes are best suited for the target conditions. 
+
+#We ran a separate script to see which proteomes would be best suited based on hit number:
+Proteome,hsp70_hits,mcrA_hits
+proteome_03,3,1
+proteome_05,2,1
+proteome_07,2,1
+proteome_15,1,1
+proteome_16,1,1
+proteome_19,1,2
+proteome_23,2,2
+proteome_24,2,1
+proteome_29,0,1
+proteome_38,1,1
+proteome_39,1,1
+proteome_42,3,1
+proteome_44,1,1
+proteome_45,3,1
+proteome_48,1,1
+proteome_50,3,1
+#since mcrA hits have to be at least one for the organism to be methanogenic, we removed those that had 0 mcrA hits. Of these proteomes left, the ones that would be best fit would likely be 03, 42, 45, and 50.
+
 #5.a) Difference between pairwise alignment and profile-based searching
 #Pairwise alignment compares a pair of DNA/RNA/protein sequences and is limited to only a pair. It compares them to find similar/different regions.
 #Profile-based searching, in our case, uses a Hidden Markov Model (HMM), which is built from a multiple sequence alignment (MSA). A specific sequence is then compared to the HMM. 
+
