@@ -1,0 +1,22 @@
+#1.a) using muscle on hsp70genes 
+for i in ./data/hsp70gene_*.fasta; do cat $i >> compiled_hsp70gene.fasta; done
+## output is a compiled file of all hsp70 gene .fasta files
+
+muscle -align ./compiled_hsp70gene.fasta -output aligned_hsp70gene.afa1~muscle -align ./compiled_hsp70gene.fasta -output aligned_hsp70gene.afa
+## output is an alignment of all .fasta sequences from the compiled_hsp70gene.fasta file
+
+#1.b) using hmmbuild on hsp70 genes
+hmmbuild hsp70profile.hmm aligned_hsp70gene.afa
+## the name of our profile is hsp70profile.hmm
+
+#2.a) hmmsearch used against proteome
+
+#2.b) Grep of HSP70 table
+grep -v "#" -c results_table.txt
+4
+## there are 4 significant hits
+
+#2.c) Explaining significance of E-value and why we use a threshold
+# The E value (Expected value) estimates how likely it is your match occurred by chance, with a low E value thus meaning your match is statistically significant (less likely to have occurred by chance) and a high value meaning it is not statistically significant. A threshold removes matches that are likely random and not statistically significant, therefore allowing us to focus on only important matches. This is important when there are hundreds or thousands of matches. 
+
+
