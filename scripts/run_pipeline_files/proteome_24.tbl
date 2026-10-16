@@ -1,15 +1,14 @@
 #                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
 # target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
 #------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
-WP_011034423.1       -          aligned_hsp70gene    -                  0 1110.1  23.1         0 1109.9  23.1   1.0   1   0   0   1   1   1   1 molecular chaperone DnaK 
-WP_080942098.1       -          aligned_hsp70gene    -           1.1e-211  702.0   7.0  1.3e-211  701.7   7.0   1.0   1   0   0   1   1   1   1 MULTISPECIES: molecular chaperone DnaK 
+WP_011033189.1       -          aligned_mcrAgene     -                  0 1122.8   4.0         0 1122.6   4.0   1.0   1   0   0   1   1   1   1 coenzyme-B sulfoethylthiotransferase subunit alpha 
 #
 # Program:         hmmsearch
 # Version:         3.4 (Aug 2023)
 # Pipeline mode:   SEARCH
-# Query file:      ./run_pipeline_files/hsp70geneprofile.hmm
+# Query file:      ./run_pipeline_files/mcrAgeneprofile.hmm
 # Target file:     /users/micazama/Midterm-EmmaS-MateoIM/bioinformatics_project/proteomes//proteome_24.fasta
-# Option settings: hmmsearch -o ./run_pipeline_files/dump.txt --tblout ./run_pipeline_files/proteome_24.tbl -E 0.001 ./run_pipeline_files/hsp70geneprofile.hmm /users/micazama/Midterm-EmmaS-MateoIM/bioinformatics_project/proteomes//proteome_24.fasta 
+# Option settings: hmmsearch -o ./run_pipeline_files/dump.txt --tblout ./run_pipeline_files/proteome_24.tbl -E 0.001 ./run_pipeline_files/mcrAgeneprofile.hmm /users/micazama/Midterm-EmmaS-MateoIM/bioinformatics_project/proteomes//proteome_24.fasta 
 # Current dir:     /users/micazama/Midterm-EmmaS-MateoIM/scripts
-# Date:            Fri Oct 16 02:33:35 2026
+# Date:            Fri Oct 16 11:03:53 2026
 # [ok]

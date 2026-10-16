@@ -1,20 +1,13 @@
 #                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
 # target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
 #------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
-WP_010075966.1       -          aligned_hsp70gene    -                  0 1013.9  32.6         0 1013.7  32.6   1.0   1   0   0   1   1   1   1 molecular chaperone DnaK 
-WP_010073455.1       -          aligned_hsp70gene    -           4.5e-136  452.5   4.3  5.3e-136  452.3   4.3   1.0   1   0   0   1   1   1   1 molecular chaperone HscC 
-WP_010076109.1       -          aligned_hsp70gene    -             8e-111  369.1   6.6  2.3e-103  344.5   0.5   2.2   2   0   0   2   2   2   2 Hsp70 family protein 
-WP_010076108.1       -          aligned_hsp70gene    -            4.9e-88  293.9   5.3     6e-88  293.6   5.3   1.1   1   0   0   1   1   1   1 Hsp70 family protein 
-WP_010075827.1       -          aligned_hsp70gene    -            2.6e-15   53.7  10.0   1.6e-14   51.1  10.0   2.2   1   1   0   1   1   1   1 rod shape-determining protein 
-WP_010076656.1       -          aligned_hsp70gene    -            8.8e-15   51.9   7.2   7.2e-14   48.9   7.2   2.3   1   1   0   1   1   1   1 rod shape-determining protein 
-WP_010074858.1       -          aligned_hsp70gene    -            0.00089   15.6   0.0    0.0061   12.8   0.0   2.0   2   0   0   2   2   2   1 xylulokinase 
 #
 # Program:         hmmsearch
 # Version:         3.4 (Aug 2023)
 # Pipeline mode:   SEARCH
-# Query file:      ./run_pipeline_files/hsp70geneprofile.hmm
+# Query file:      ./run_pipeline_files/mcrAgeneprofile.hmm
 # Target file:     /users/micazama/Midterm-EmmaS-MateoIM/bioinformatics_project/proteomes//proteome_18.fasta
-# Option settings: hmmsearch -o ./run_pipeline_files/dump.txt --tblout ./run_pipeline_files/proteome_18.tbl -E 0.001 ./run_pipeline_files/hsp70geneprofile.hmm /users/micazama/Midterm-EmmaS-MateoIM/bioinformatics_project/proteomes//proteome_18.fasta 
+# Option settings: hmmsearch -o ./run_pipeline_files/dump.txt --tblout ./run_pipeline_files/proteome_18.tbl -E 0.001 ./run_pipeline_files/mcrAgeneprofile.hmm /users/micazama/Midterm-EmmaS-MateoIM/bioinformatics_project/proteomes//proteome_18.fasta 
 # Current dir:     /users/micazama/Midterm-EmmaS-MateoIM/scripts
-# Date:            Fri Oct 16 02:33:35 2026
+# Date:            Fri Oct 16 11:03:53 2026
 # [ok]

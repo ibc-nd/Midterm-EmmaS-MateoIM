@@ -1,17 +1,13 @@
 #                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
 # target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
 #------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
-WP_013362005.1       -          aligned_hsp70gene    -           3.7e-298  987.1  30.7  4.1e-298  987.0  30.7   1.0   1   0   0   1   1   1   1 molecular chaperone DnaK 
-WP_013360607.1       -          aligned_hsp70gene    -           7.2e-129  428.0   0.2  1.1e-128  427.4   0.2   1.1   1   0   0   1   1   1   1 molecular chaperone HscC 
-WP_013362571.1       -          aligned_hsp70gene    -            4.5e-12   42.2   6.4     2e-11   40.1   6.4   2.1   1   1   0   1   1   1   1 rod shape-determining protein 
-WP_013360481.1       -          aligned_hsp70gene    -            3.2e-09   32.8   2.0   6.6e-05   18.5   0.6   2.7   2   1   1   3   3   3   2 ethanolamine utilization protein EutJ 
 #
 # Program:         hmmsearch
 # Version:         3.4 (Aug 2023)
 # Pipeline mode:   SEARCH
-# Query file:      ./run_pipeline_files/hsp70geneprofile.hmm
+# Query file:      ./run_pipeline_files/mcrAgeneprofile.hmm
 # Target file:     /users/micazama/Midterm-EmmaS-MateoIM/bioinformatics_project/proteomes//proteome_01.fasta
-# Option settings: hmmsearch -o ./run_pipeline_files/dump.txt --tblout ./run_pipeline_files/proteome_01.tbl -E 0.001 ./run_pipeline_files/hsp70geneprofile.hmm /users/micazama/Midterm-EmmaS-MateoIM/bioinformatics_project/proteomes//proteome_01.fasta 
+# Option settings: hmmsearch -o ./run_pipeline_files/dump.txt --tblout ./run_pipeline_files/proteome_01.tbl -E 0.001 ./run_pipeline_files/mcrAgeneprofile.hmm /users/micazama/Midterm-EmmaS-MateoIM/bioinformatics_project/proteomes//proteome_01.fasta 
 # Current dir:     /users/micazama/Midterm-EmmaS-MateoIM/scripts
-# Date:            Fri Oct 16 02:33:34 2026
+# Date:            Fri Oct 16 11:03:52 2026
 # [ok]

@@ -1,19 +1,13 @@
 #                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
 # target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
 #------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
-WP_015941672.1       -          aligned_hsp70gene    -           1.5e-282  936.1  18.1  1.3e-280  929.7  18.1   2.0   1   1   0   1   1   1   1 molecular chaperone DnaK 
-WP_015941419.1       -          aligned_hsp70gene    -           7.2e-278  920.7  12.7  1.1e-245  814.5   7.1   2.0   1   1   1   2   2   2   2 molecular chaperone DnaK 
-WP_015942306.1       -          aligned_hsp70gene    -            1.6e-34  116.9   0.0   1.9e-19   67.2   0.0   3.0   2   1   0   3   3   3   3 Hsp70 family protein 
-WP_012616464.1       -          aligned_hsp70gene    -            1.1e-11   41.4   6.2   2.5e-11   40.3   6.2   1.7   1   1   0   1   1   1   1 rod shape-determining protein 
-WP_012616267.1       -          aligned_hsp70gene    -            3.2e-11   40.0   5.6   1.4e-09   34.6   5.6   2.7   1   1   0   1   1   1   1 rod shape-determining protein 
-WP_015941576.1       -          aligned_hsp70gene    -            3.3e-05   20.1   0.9   0.00028   17.0   0.1   2.2   2   0   0   2   2   2   1 cell division protein FtsA 
 #
 # Program:         hmmsearch
 # Version:         3.4 (Aug 2023)
 # Pipeline mode:   SEARCH
-# Query file:      ./run_pipeline_files/hsp70geneprofile.hmm
+# Query file:      ./run_pipeline_files/mcrAgeneprofile.hmm
 # Target file:     /users/micazama/Midterm-EmmaS-MateoIM/bioinformatics_project/proteomes//proteome_11.fasta
-# Option settings: hmmsearch -o ./run_pipeline_files/dump.txt --tblout ./run_pipeline_files/proteome_11.tbl -E 0.001 ./run_pipeline_files/hsp70geneprofile.hmm /users/micazama/Midterm-EmmaS-MateoIM/bioinformatics_project/proteomes//proteome_11.fasta 
+# Option settings: hmmsearch -o ./run_pipeline_files/dump.txt --tblout ./run_pipeline_files/proteome_11.tbl -E 0.001 ./run_pipeline_files/mcrAgeneprofile.hmm /users/micazama/Midterm-EmmaS-MateoIM/bioinformatics_project/proteomes//proteome_11.fasta 
 # Current dir:     /users/micazama/Midterm-EmmaS-MateoIM/scripts
-# Date:            Fri Oct 16 02:33:34 2026
+# Date:            Fri Oct 16 11:03:52 2026
 # [ok]

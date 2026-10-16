@@ -5,7 +5,7 @@
 #The regex code below will take this input, and convert the file name to omitt the number and look for all of the files with that gene.
 
 
-#The script will also take input 2: a direc. Make sure the absolute path is provided.
+#The script will also take input 2: a directory for the proteomes. Make sure the absolute path is provided.
 
 
 #Getting the reference to run through the directory: genename_*.fasta
@@ -44,5 +44,5 @@ name=$(basename "$proteome" .fasta)
 tbl="$inter_dir/$name.tbl"
 hmmsearch -E 0.001 -o "$inter_dir/dump.txt" --tblout "$tbl" "$inter_dir/${gene_name}profile.hmm" "$proteome"
 count=$(grep -vc '^#' "$tbl")
-echo "$name,$count" >> pipeline_results.csv
+echo "$name,$count" >> ../results/exercise03/pipeline_results_$gene_name.csv
 done
