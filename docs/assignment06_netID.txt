@@ -9,6 +9,8 @@ muscle -align ./compiled_hsp70gene.fasta -output aligned_hsp70gene.afa1~muscle -
 hmmbuild hsp70profile.hmm aligned_hsp70gene.afa
 ## the name of our profile is hsp70profile.hmm
 
+
+
 #2.a) hmmsearch used against proteome
 
 #2.b) Grep of HSP70 table
@@ -68,4 +70,22 @@ proteome_50,3,1
 #5.a) Difference between pairwise alignment and profile-based searching
 #Pairwise alignment compares a pair of DNA/RNA/protein sequences and is limited to only a pair. It compares them to find similar/different regions.
 #Profile-based searching, in our case, uses a Hidden Markov Model (HMM), which is built from a multiple sequence alignment (MSA). A specific sequence is then compared to the HMM. 
+
+
+#3. 
+#Script can be found in submission or at ./users/micazama/Midterm-EmmaS-MateoIM/scripts
+
+
+
+#5.a) Difference between pairwise alignment and profile-based searching
+#Pairwise alignment compares a pair of DNA/RNA/protein sequences and is limited to only a pair. It compares them to find similar/different regions and uses a consistent scoring system at every position.
+#Profile-based searching, in our case, uses a Hidden Markov Model (HMM), which is built from a multiple sequence alignment (MSA). A specific sequence is then compared to the HMM where conserverd positions count heavily and variable lightly. 
+#Pairwise alignment works best with similar sequences and sequences with no known family. The profile-based searching would be better for genes and proteins that are much different, potentially due to evolution.   
+
+#5.b)  Why is building an HMM profile from multiple sequences more sensitive than using a single sequence as a BLAST query?
+#An HHM profile is more sensitive because it uses position specific data to weight the matches. In particular, after an 
+#MSA is built, regions of similiarty are put into a column. It then evaluates the per column probability and 
+#evaluates these and punishes differences at highly conserved sites and not as much for variable sites. This allows 
+#it to detect sections which have diverged so far that BLAST cant detect them. This is because BLAST applies the
+#query to a BLOSUM62 (susbtitution matrix) that is applied identically to each postion. 
 
