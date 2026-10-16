@@ -19,4 +19,6 @@ grep -v "#" -c results_table.txt
 #2.c) Explaining significance of E-value and why we use a threshold
 # The E value (Expected value) estimates how likely it is your match occurred by chance, with a low E value thus meaning your match is statistically significant (less likely to have occurred by chance) and a high value meaning it is not statistically significant. A threshold removes matches that are likely random and not statistically significant, therefore allowing us to focus on only important matches. This is important when there are hundreds or thousands of matches. 
 
-
+#5.a) Difference between pairwise alignment and profile-based searching
+#Pairwise alignment compares a pair of DNA/RNA/protein sequences and is limited to only a pair. It compares them to find similar/different regions.
+#Profile-based searching, in our case, uses a Hidden Markov Model (HMM), which is built from a multiple sequence alignment (MSA). A specific sequence is then compared to the HMM. 
