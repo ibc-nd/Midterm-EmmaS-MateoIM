@@ -9,6 +9,8 @@ muscle -align ./compiled_hsp70gene.fasta -output aligned_hsp70gene.afa1~muscle -
 hmmbuild hsp70profile.hmm aligned_hsp70gene.afa
 ## the name of our profile is hsp70profile.hmm
 
+
+
 #2.a) hmmsearch used against proteome
 
 #2.b) Grep of HSP70 table
@@ -18,6 +20,12 @@ grep -v "#" -c results_table.txt
 
 #2.c) Explaining significance of E-value and why we use a threshold
 # The E value (Expected value) estimates how likely it is your match occurred by chance, with a low E value thus meaning your match is statistically significant (less likely to have occurred by chance) and a high value meaning it is not statistically significant. A threshold removes matches that are likely random and not statistically significant, therefore allowing us to focus on only important matches. This is important when there are hundreds or thousands of matches. 
+
+
+#3. 
+#Script can be found in submission or at ./users/micazama/Midterm-EmmaS-MateoIM/scripts
+
+
 
 #5.a) Difference between pairwise alignment and profile-based searching
 #Pairwise alignment compares a pair of DNA/RNA/protein sequences and is limited to only a pair. It compares them to find similar/different regions and uses a consistent scoring system at every position.
