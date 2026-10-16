@@ -1,11 +1,17 @@
 #! /bin/bash
 
-#The script will take input 1: a reference file, and input 2: a directory.
-#The reference file will be in the format where and with its absolute path /path/path/path/gene_number.fasta. For example: hsp70gene_01.fasta.
-#The regex code below will take this input, and convert the file name to omitt the number and look for all of the files with that gene.
 
+#run_pipeline will take an example gene fasta file and a directory of proteomes and align, create an HMM profile, and se>
 
-#The script will also take input 2: a directory for the proteomes. Make sure the absolute path is provided.
+#To use the script run_pipeline.sh, there are 2 arguments that need to be provided:
+#1- Path for example gene file
+#2- Path for directory with all of the proteomes
+
+#bash run_pipeline.sh $1 $2
+
+#In the scripts directory, this is an example of how run_pipeline.sh will be formatted. Here it processes proteomes agai>
+
+#bash run_pipeline.sh /users/micazama/Midterm-EmmaS-MateoIM/bioinformatics_project/ref_sequences/mcrAgene_01.fasta /user>
 
 
 #Getting the reference to run through the directory: genename_*.fasta
